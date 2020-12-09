@@ -1,0 +1,23 @@
+# # thumb wheel up => increase volume
+# "xte 'key XF86AudioRaiseVolume'"
+#    b:6
+# 
+# # thumb wheel down => lower volume
+# "xte 'key XF86AudioLowerVolume'"
+#    b:7
+
+# # thumb wheel up => increase volume
+# "pactl set-sink-volume @DEFAULT_SINK@ +2%"
+#    b:6
+# 
+# # thumb wheel down => lower volume
+# "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+#    b:7
+
+# thumb wheel up => increase volume and unmute
+"amixer -D pulse set Master 4000+ unmute"
+   b:6
+
+# thumb wheel down => lower volume
+"amixer -D pulse set Master 4000-"
+   b:7

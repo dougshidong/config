@@ -1,0 +1,10 @@
+[user]
+	email = doug.shidong@gmail.com
+	name = Doug Shi-Dong
+[alias]
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+[core] 
+	editor = vim
+[diff]                                                                                                         
+    tool = vimdiff
